@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successful Transaction</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      * {
+        padding: 0;
+        margin: 0 10px;
+        font-family: "Inter";
+      }
+
+      body{
+        width: 100%;
+        background-color: rgb(218, 212, 212);
+      }
+
+      .email-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      .logo {
+        padding: 25px;
+        width: 150px;
+      }
+
+      h1 {
+        padding: 25px;
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      @media(max-width: 767px) {
+        .email-container{
+          overflow: hidden;
+        }
+
+        .logo {
+          padding: 19px;
+          width: 110px;
+        }
+
+        .header h1 {
+          font-size: 20px;
+          padding: 5px;
+        }
+
+        .sub-text{
+          font-size: 18px;
+        }
+
+        .logo-container{
+            flex-wrap: wrap;
+        }
+
+        .socials-logo {
+          display: flex;
+          
+        }
+
+        .socials-logo a img{
+          width: 45px;
+          display: inline-block;
+          flex-direction: row;
+          margin-right:  2px;
+        }
+
+        
+        .logo-2{
+            width: 180px;
+            margin-top: 25px;
+        }
+
+        .links {
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+
+      .illustration-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .illustration {
+        top: 31px;
+        left: 54px;
+        width: 80%;
+      }
+
+      .sub-text {
+        padding: 25px;
+        padding-top: 25px;
+        line-height: 30px;
+        font-size: 18px;
+      }
+
+      .sub-text h3 {
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+
+      .sub-text p {
+        font-weight: 400;
+      }
+
+     .details{
+        padding: 10px 0;
+      }
+
+      .sub-text span {
+        font-weight: 800;
+      }
+
+      p.bold {
+        font-weight: 700;
+      }
+
+      .sub-text2 {
+        padding: 25px;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(14, 48, 121, 1);
+      }
+
+      .sub-text2 {
+        font-weight: 400;
+      }
+
+      .contact {
+        padding: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(14, 48, 121, 1);
+        line-height: 30px;
+      }
+
+      .contacts {
+        color: rgba(141, 145, 160, 1);
+        font-weight: 400;
+      }
+
+      .socials {
+        padding: 25px;
+        color: rgba(141, 145, 160, 1);
+      }
+
+      .socials p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.36px;
+      }
+
+      .logo-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        font-size: 25px;
+      }
+
+      .socials-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        gap: px;
+      }
+
+      .socials a {
+        color: rgba(141, 145, 160, 1);
+        text-decoration: none;
+      }
+
+      .logo-media {
+        margin: 0 -15px;
+        width: 120%;
+        
+      }
+
+      .logo-2 img{
+        width: 60%;
+        margin-bottom: 10px;
+      }
+
+      .links {
+        padding-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!---Logo-->
+      <img src="img/Frame 3 (1).png" alt="Logo-header" class="logo">
+      <br>
+      <!----Title Header-->
+      <div class="header">
+        <h1>You have been verified</h1>
+      </div>
+      <br>
+      <!--Sub-Text Area one-->
+      <section class="sub-text">
+        <h3>Hello Dere,</h3>
+        <p>We're pleased to inform you that a recent incoming transaction has been successfully credited to your account.</p>
+        <p>Transaction Details: </p>
+
+        <p class="details">Amount Received: [Amount]</p>
+
+        <p class="details">Sender: [Sender's Name or Account Number]</p>
+
+        <p class="details">Date: [Date of Transaction]</p>
+
+        <p class="details">Reference Number: [Transaction Reference Number]</p>
+        
+        <br>
+        <p>Best regards,</p>
+        <p class="bold"> Korrency Team </p>
+      </section>
+      <br>
+      <!--Sub-Text Area two--->
+      <section class="sub-text2">
+        <p class="bold"> Please Note </p>
+        <p> Never share your password or security details with anyone not even relatives and we will not ask for sensitive information via social media and unverified emails. </p>
+      </section>
+      <br>
+      <!----Contact Us-->
+      <section class="contact">
+        <p>
+          <span class="contacts">Email:</span> support@korrency.com
+        </p>
+        <p>
+          <span class="contacts">Address:</span> 7030 Woodbine Ave., Suite 500 Markham, Ontario L3R 6G2
+        </p>
+      </section>
+      <!---Socials & Footer-->
+      <section class="socials">
+        <p>Korrency is a registered money service business with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) under registration number M24601697</p>
+        <div class="logo-container">
+            <div class="socials-logo">
+            <a href="#">
+                <img src="img/Frame 3904.png" alt="" class="logo-media">
+            </a>
+            <a href="#">
+                <img src="img/Frame 3901.png" alt="" class="logo-media">
+            </a>
+            <a href="#">
+                <img src="img/Frame 3905.png" alt="" class="logo-media">
+            </a>
+            <a href="#">
+                <img src="img/Frame 3903.png" alt="" class="logo-media">
+            </a>
+            </div>
+            <div class="logo-2">
+                <img src="img/Frame 3.png" alt="">
+            </div>
+        </div>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
