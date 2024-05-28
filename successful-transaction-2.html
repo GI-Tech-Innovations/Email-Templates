@@ -9,7 +9,7 @@
 
       * {
         padding: 0;
-        margin: 0 10px;
+        margin: 0 auto;
         font-family: "Inter";
       }
 
@@ -20,16 +20,24 @@
 
       .email-container {
         max-width: 800px;
-        margin: 0 auto;
+        width: 100%; 
         background-color: #fff;
+        box-sizing: border-box;
+      }
+
+      .container{
+        margin: 0 20px;
+        position: relative;
       }
 
       .logo {
+        margin: 0 11px;
         padding: 25px;
         width: 150px;
       }
 
       h1 {
+        margin: 0 11px;
         padding: 25px;
         font-weight: 600;
         font-size: 30px;
@@ -42,63 +50,49 @@
 
         .logo {
           padding: 19px;
-          width: 110px;
+          margin-right: 10px;
+          width: 120px;
         }
 
+
         .header h1 {
-          font-size: 20px;
+          font-size: 25px;
           padding: 5px;
         }
 
-        .sub-text{
+        .sub-text {
           font-size: 18px;
+          margin: 0 10px;
         }
 
         .logo-container{
             flex-wrap: wrap;
         }
 
+
         .socials-logo {
           display: flex;
-          
+          justify-content: space-between;
         }
 
         .socials-logo a img{
-          width: 45px;
+          width: 30px;
           display: inline-block;
           flex-direction: row;
-          margin-right:  2px;
+          gap: 8px;
         }
-
-        
-        .logo-2{
-            width: 180px;
-            margin-top: 25px;
-        }
-
+      
         .links {
           font-size: 13px;
           font-weight: 400;
         }
       }
 
-      .illustration-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .illustration {
-        top: 31px;
-        left: 54px;
-        width: 80%;
-      }
-
       .sub-text {
         padding: 25px;
         padding-top: 25px;
         line-height: 30px;
-        font-size: 18px;
+        font-size: 16px;
       }
 
       .sub-text h3 {
@@ -110,12 +104,13 @@
         font-weight: 400;
       }
 
-     .details{
+      .details{
         padding: 10px 0;
       }
 
       .sub-text span {
         font-weight: 800;
+        padding-bottom: 10px;
       }
 
       p.bold {
@@ -160,16 +155,15 @@
       .logo-container{
         display: flex;
         justify-content: space-between;
-        margin-top: 45px;
+        margin-top: 25px;
         font-size: 25px;
       }
 
       .socials-logo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        align-items: center;
-        gap: px;
+        display: inline-block;
+       padding: 0;
+        margin: 0 ;
+        gap: 20px;
       }
 
       .socials a {
@@ -178,26 +172,33 @@
       }
 
       .logo-media {
-        margin: 0 -15px;
-        width: 120%;
-        
-      }
-
-      .logo-2 img{
-        width: 60%;
-        margin-bottom: 10px;
+       display: inline-block;
+        width: 40px;
+        padding: 15px 5px;
       }
 
       .links {
-        padding-top: 25px;
+        padding-top: 15px;
+        margin-right: 5px;
+        font-size: 14px;
       }
+
+      .logo-2{
+        position: absolute;
+        right: 0;
+      }
+
+      .links a{
+        margin-right: 10px;
+      }
+
     </style>
   </head>
   <body>
     <div class="email-container">
+      <div class="container">
       <!---Logo-->
-      <img src="img/Frame 3 (1).png" alt="Logo-header" class="logo">
-      <br>
+      <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" alt="Logo-header" class="logo">
       <!----Title Header-->
       <div class="header">
         <h1>You have been verified</h1>
@@ -237,33 +238,34 @@
           <span class="contacts">Address:</span> 7030 Woodbine Ave., Suite 500 Markham, Ontario L3R 6G2
         </p>
       </section>
-      <!---Socials & Footer-->
-      <section class="socials">
-        <p>Korrency is a registered money service business with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) under registration number M24601697</p>
-        <div class="logo-container">
-            <div class="socials-logo">
-            <a href="#">
-                <img src="img/Frame 3904.png" alt="" class="logo-media">
-            </a>
-            <a href="#">
-                <img src="img/Frame 3901.png" alt="" class="logo-media">
-            </a>
-            <a href="#">
-                <img src="img/Frame 3905.png" alt="" class="logo-media">
-            </a>
-            <a href="#">
-                <img src="img/Frame 3903.png" alt="" class="logo-media">
-            </a>
+            <!---Socials & Footer-->
+            <section class="socials">
+              <p>Korrency is a registered money service business with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) under registration number M24601697</p>
+              <div class="logo-container">
+                  <div class="socials-logo">
+                  <a href="https://facebook.com/">
+                      <img src="https://korrency-email-template.s3.amazonaws.com/facebook.svg" alt="" class="logo-media">
+                  </a>
+                  <a href="https://instagram.com/">
+                      <img src="https://korrency-email-template.s3.amazonaws.com/instagram.svg" alt="" class="logo-media">
+                  </a>
+                  <a href="https://instagram.com/">
+                      <img src="https://korrency-email-template.s3.amazonaws.com/twitter.svg" alt="" class="logo-media">
+                  </a>
+                  <a href="https://instagram.com/">
+                      <img src="https://korrency-email-template.s3.amazonaws.com/linkedin.svg" alt="" class="logo-media">
+                  </a>
+                  </div>
+                  <div>
+                      <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" class="logo logo-2" alt="">
+                  </div>
+              </div>
+              <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+              </div>
+            </section>
             </div>
-            <div class="logo-2">
-                <img src="img/Frame 3.png" alt="">
-            </div>
-        </div>
-        <div class="links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and Conditions</a>
-        </div>
-      </section>
-    </div>
-  </body>
-</html>
+          </div>
+        </body>
+      </html>
