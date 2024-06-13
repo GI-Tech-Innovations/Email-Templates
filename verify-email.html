@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete your KYC</title>
+    <title>Verify Email</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -36,9 +36,10 @@
       }
 
       h1 {
-        padding: 25px;
+        padding: 20px;
         font-weight: 600;
         font-size: 30px;
+        margin-top: 20px;
       }
 
       @media(max-width: 767px) {
@@ -116,13 +117,26 @@
         font-size: 16px;
       }
 
-      .sub-text h3 {
+      .sub-h1 {
         font-weight: 600;
-        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
       }
 
       .sub-text p {
         font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .sub-text p span{
+        color: rgba(14, 48, 121, 1);
+      }
+
+
+      .details{
+        margin-bottom: 40px;
       }
 
       .sub-text span {
@@ -132,24 +146,6 @@
 
       p.bold {
         font-weight: 700;
-      }
-
-      .btn-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 5px;
-      }
-
-      .btn{
-        background: rgba(14, 48, 121, 1);
-        color: #fff;
-        padding: 10px;
-        font-size: 13px;
-        font-weight: 500;
-        border: none;
-        outline: none;
-        border-radius: 3px;
       }
 
       .sub-text2 {
@@ -255,21 +251,15 @@
       <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" alt="Logo-header" class="logo">
       <!----Title Header-->
       <div class="header">
-        <h1>Complete your KYC</h1>
-      </div>
-      <!---Illustration-->
-      <div class="illustration-container">
-        <img src="img/Illustration.png" alt="" class="illustration">
+        <h1>Verify Email</h1>
       </div>
       <!--Sub-Text Area one-->
       <section class="sub-text">
-            <h3>Hello Dere,</h3>
-            <p>Just a friendly reminder that your KYC (Know Your Customer) verification is still pending on Korrency.</p>
-            <p>Completing your KYC is crucial for unlocking all the features and benefits we offer, including enhanced security and higher transaction limits.</p>
-            <p>Please log in to your account and complete your KYC verification at your earliest convenience.</p>
-            <div class="btn-container">
-                <button class="btn">Log In to Verify Your Account</button>
-            </div>
+            <p>To ensure the protection of your account, we require verification of your identity.
+                Please find below your One Time Password (OTP) for verification:</p>
+                <h1 class="sub-h1">353000</h1>
+            <p>This code expires in <span>10 minutes</span> and should only be used in-app.</p>
+            <p>For security purposes, please do not share this OTP with anyone. If you did not request this verification, kindly ignore this email.</p>
             <br>
             <p>Best regards,</p>
             <p class="bold"> Korrency Team </p>
@@ -277,7 +267,7 @@
       <br>
       <!--Sub-Text Area two--->
       <section class="sub-text2">
-        <p class="bold"> Please Note </p>
+        <p class="bold">Please Note:</p>
         <p> Never share your password or security details with anyone not even relatives and we will not ask for sensitive information via social media and unverified emails. </p>
       </section>
       <br>
