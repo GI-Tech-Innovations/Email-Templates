@@ -3,262 +3,118 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Successful Transaction</title>
-  <style>
-    @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-
-    * {
-      padding: 0;
-      margin: 0 auto;
-      font-family: Inter
-    }
-
-    body {
-      width: 100%;
-      background-color: #dad4d4
-    }
-
-    .email-container {
-      max-width: 800px;
-      width: 100%;
-      background-color: #fff;
-      box-sizing: border-box
-    }
-
-    .container {
-      margin: 0 20px;
-      position: relative
-    }
-
-    .logo {
-      margin: 25px;
-      width: 150px
-    }
-
-    h1 {
-      padding: 25px;
-      font-weight: 600;
-      font-size: 30px
-    }
-
-    @media(max-width:767px) {
-      .email-container {
-        overflow: hidden
-      }
-
-      .logo {
-        margin: 30px;
-        margin-right: 10px;
-        width: 120px;
-        margin-bottom: 20px
-      }
-
-      .header h1 {
-        font-size: 25px;
-        padding: 5px 30px
-      }
-
-      .sub-text {
-        font-size: 18px;
-        margin: 0 10px
-      }
-
-      .logo-container {
-        flex-wrap: wrap
-      }
-
-      .socials-logo {
-        display: flex;
-        justify-content: space-between
-      }
-
-      .socials-logo a img {
-        width: 30px;
-        display: inline-block;
-        flex-direction: row;
-        gap: 8px
-      }
-
-      .links {
-        font-size: 13px;
-        font-weight: 400
-      }
-    }
-
-    .sub-text {
-      padding: 25px;
-      padding-top: 1px;
-      line-height: 30px;
-      font-size: 16px
-    }
-
-    .sub-text h3 {
-      font-weight: 600;
-      padding-bottom: 10px
-    }
-
-    .sub-text p {
-      font-weight: 400
-    }
-
-    .details {
-      padding: 10px 0
-    }
-
-    .sub-text span {
-      font-weight: 800;
-      padding-bottom: 10px
-    }
-
-    p.bold {
-      font-weight: 700
-    }
-
-    .sub-text2 {
-      padding: 25px;
-      font-size: 14px;
-      line-height: 24px;
-      color: #0e3079
-    }
-
-    .sub-text2 {
-      font-weight: 400
-    }
-
-    .contact {
-      padding: 25px;
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(14, 48, 121, 1);
-      line-height: 30px
-    }
-
-    .contacts {
-      color: rgba(141, 145, 160, 1);
-      font-weight: 400
-    }
-
-    .socials {
-      padding: 25px;
-      color: rgba(141, 145, 160, 1)
-    }
-
-    .socials p {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 19.36px
-    }
-
-    .logo-container {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 25px;
-      font-size: 25px
-    }
-
-    .socials-logo {
-      display: inline-block;
-      padding: 0;
-      margin: 0;
-      gap: 20px
-    }
-
-    .socials a {
-      color: rgba(141, 145, 160, 1);
-      text-decoration: none
-    }
-
-    .logo-media {
-      display: inline-block;
-      width: 40px;
-      padding: 15px 2px
-    }
-
-    .links {
-      padding-top: 15px;
-      margin-right: 5px;
-      font-size: 14px
-    }
-
-    .logo-2 {
-      position: absolute;
-      right: 0;
-      padding: 20px 57px
-    }
-
-    .links a {
-      margin-right: 10px
-    }
-
-    @media(max-width:600px) {
-      .logo-2 {
-        width: 100px;
-        padding: 15px 10px
-      }
-
-      .logo-media {
-        padding: 15px 1px
-      }
-    }
-
-    @media(max-width:375px) {
-      .logo-2 {
-        padding: 15px 10px
-      }
-
-      .logo-media {
-        padding: 15px 1px
-      }
-    }
-  </style>
 </head>
 
-<body>
-  <div class="email-container">
-    <div class="container"> <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" alt="Logo-header"
-        class="logo">
-      <div class="header">
-        <h1>Successful Transaction</h1>
-      </div> <br>
-      <section class="sub-text">
-        <h3>Hello {{ firstName }},</h3>
-        <p>Your recent {{ currencyCode }} wallet funding transaction has been successfully credited to your Korrency {{
-          currencyCode }} wallet.</p>
-        <p class="bold" style="margin-top:15px">Transaction Details:</p>
-        <p class="details">Amount Received: {{ amount }}</p>
-        <p class="details">Sender: {{ sender }}</p>
-        <p class="details">Date: {{ transactionDate }}</p>
-        <p class="details">Reference Number: {{ transactionReference }}</p> <br>
-        <p>Best regards,</p>
-        <p class="bold">Korrency Team</p>
-      </section> <br>
-      <section class="sub-text2">
-        <p class="bold">Please Note</p>
-        <p>Never share your password or security details with anyone not even relatives and we will not ask for
-          sensitive information via social media and unverified emails.</p>
-      </section> <br>
-      <section class="contact">
-        <p> <span class="contacts">Email:</span>support@korrency.com </p>
-        <p> <span class="contacts">Address:</span>7030 Woodbine Ave., Suite 500 Markham, Ontario L3R 6G2 </p>
-      </section>
-      <section class="socials">
-        <p>Korrency is a registered money service business with the Financial Transactions and Reports Analysis Centre
-          of Canada (FINTRAC) under registration number M24601697</p>
-        <div class="logo-container">
-          <div class="socials-logo"> <a href="https://facebook.com/"> <img
-                src="https://korrency-email-template.s3.amazonaws.com/facebook.svg" alt="" class="logo-media"> </a> <a
-              href="https://instagram.com/"> <img src="https://korrency-email-template.s3.amazonaws.com/instagram.svg"
-                alt="" class="logo-media"> </a> <a href="https://instagram.com/"> <img
-                src="https://korrency-email-template.s3.amazonaws.com/twitter.svg" alt="" class="logo-media"> </a> <a
-              href="https://instagram.com/"> <img src="https://korrency-email-template.s3.amazonaws.com/linkedin.svg"
-                alt="" class="logo-media"> </a> </div>
-          <div> <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" class="logo logo-2" alt=""> </div>
-        </div>
-        <div class="links"> <a href="#">Privacy Policy</a> <a href="#">Terms and Conditions</a> </div>
-      </section>
-    </div>
-  </div>
+<body style="margin: 0; padding: 0; font-family: 'Inter', sans-serif; background-color: #dad4d4; width: 100%;">
+  <table role="presentation" style="width: 100%; border: 0; background-color: #dad4d4; padding: 0; margin: 0;">
+    <tr>
+      <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding: 0; margin: 0;">
+        <table role="presentation"
+          style="max-width: 680px; width: 100%; background-color: #ffffff; border: 0; box-sizing: border-box; margin: 0 auto; padding: 0;">
+          <tr>
+            <td align="left" style="padding: 25px;">
+              <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" alt="Korrency Logo"
+                style="width: 150px;">
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding: 0 25px;">
+              <h1 style="font-weight: 600; font-size: 30px; margin: 0;">Successful Transaction</h1>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding: 25px;">
+              <h3 style="font-weight: 600; font-size: 16px; margin: 0;">Hello {{ firstName }},</h3>
+              <p style="line-height: 30px; font-size: 16px; margin: 0;">Your recent {{ currencyCode }} wallet funding
+                transaction has been successfully credited to your Korrency {{ currencyCode }} wallet.</p>
+              <p class="bold" style="margin-top: 15px; font-weight: 700; line-height: 30px; font-size: 16px;">
+                Transaction Details:</p>
+              <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Amount Received: {{ amount }}
+              </p>
+              <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Sender: {{ sender }}</p>
+              <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Date: {{ transactionDate }}</p>
+              <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Reference Number: {{
+                transactionReference }}</p>
+              <br>
+              <p style="line-height: 30px; font-size: 16px; margin: 0;">Best regards,</p>
+              <p style="font-weight: 700; line-height: 30px; font-size: 16px; margin: 0;">Korrency Team</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding: 0 25px;">
+            <p style="font-weight: 700; line-height: 24px; font-size: 14px; color: #0e3079; margin: 0;">Security Tip:</p>
+            <p style="line-height: 24px; font-size: 14px; color: #0e3079; margin: 0;">Never share your password or security details
+              with anyone not even relatives and we will not ask for sensitive information via social media and unverified emails.
+            </p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding: 25px;">
+              <p style="font-size: 14px; font-weight: 500; color: rgba(14, 48, 121, 1); line-height: 30px; margin: 0;">
+                <span style="font-weight: 400; color: rgba(141, 145, 160, 1);">Email:</span> support@korrency.com
+              </p>
+              <p style="font-size: 14px; font-weight: 500; color: rgba(14, 48, 121, 1); line-height: 30px; margin: 0;">
+                <span style="font-weight: 400; color: rgba(141, 145, 160, 1);">Address:</span> 7030 Woodbine Ave., Suite
+                500 Markham, Ontario L3R 6G2
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding: 0 25px;">
+              <p
+                style="font-size: 14px; font-weight: 400; color: rgba(141, 145, 160, 1); line-height: 19.36px; margin: 0;">
+                Korrency is a registered money service business with the Financial Transactions and Reports Analysis
+                Centre of Canada (FINTRAC) under registration number M24601697</p>
+              <table role="presentation" style="width: 100%; margin-top: 25px;">
+                <tr>
+                  <td style="width: 50%; vertical-align: top;">
+                    <table role="presentation"
+                      style="display: flex; justify-content: space-between; gap: 20px; padding: 0; margin: 0;">
+                      <tr>
+                        <td><a href="https://facebook.com/"><img
+                              src="https://korrency-email-template.s3.amazonaws.com/facebook.svg" alt="Facebook"
+                              style="width: 40px; display: block;"></a></td>
+                        <td><a href="https://instagram.com/"><img
+                              src="https://korrency-email-template.s3.amazonaws.com/instagram.svg" alt="Instagram"
+                              style="width: 40px; display: block;"></a></td>
+                        <td><a href="https://twitter.com/"><img
+                              src="https://korrency-email-template.s3.amazonaws.com/twitter.svg" alt="Twitter"
+                              style="width: 40px; display: block;"></a></td>
+                        <td><a href="https://linkedin.com/"><img
+                              src="https://korrency-email-template.s3.amazonaws.com/linkedin.svg" alt="LinkedIn"
+                              style="width: 40px; display: block;"></a></td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td style="width: 50%; text-align: right;">
+                    <img src="https://korrency-email-template.s3.amazonaws.com/logo.svg" alt="Korrency Logo"
+                      style="width: 150px;">
+                  </td>
+                </tr>
+              </table>
+              <div style="padding: 25px 0; font-size: 14px; text-align: left;">
+                <a href="#" style="color: rgba(141, 145, 160, 1); text-decoration: none; margin-right: 10px;">Privacy
+                  Policy</a>
+                <a href="#" style="color: rgba(141, 145, 160, 1); text-decoration: none;">Terms and Conditions</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+        &nbsp;
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
