@@ -28,8 +28,8 @@
           </tr>
           <tr>
             <td align="left" style="padding: 0 25px;">
-          <p style="line-height: 30px; font-size: 16px; margin: 0;">Hello {{ firstName }},</p>
-          </br>
+              <p style="line-height: 30px; font-size: 16px; margin: 0;">Hello {{ firstName }},</p>
+              </br>
               <h1 style="font-weight: 600; font-size: 30px; margin: 0; padding:0;">Successful Transaction</h1>
             </td>
           </tr>
@@ -40,7 +40,7 @@
                 transaction has been successfully credited to your Korrency {{ currencyCode }} wallet.</p>
               <p class="bold" style="margin-top: 15px; font-weight: 700; line-height: 30px; font-size: 16px;">
                 Transaction Details:</p>
-              <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Amount Received: {{ amount }}
+              <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Amount Received: {{ amount }} {{ currencyCode }}
               </p>
               <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Sender: {{ sender }}</p>
               <p class="details" style="line-height: 30px; font-size: 16px; margin: 0;">Date: {{ transactionDate }}</p>
@@ -83,25 +83,25 @@
                       style="display: flex; justify-content: space-between; gap: 20px; padding: 0; margin: 0;">
                       <tr>
                         <td>
-                          <a href="https://facebook.com/">
+                          <a href="https://facebook.com/sendkorrency" target="_blank">
                             <img src="https://korrency-email-template.s3.amazonaws.com/facebook.png" alt="Facebook"
                               style="width: 40px; display: block;">
                           </a>
                         </td>
                         <td>
-                          <a href="https://instagram.com/">
-                            <img src="https://korrency-email-template.s3.amazonaws.com/instagram.png" alt="Instagram"
-                              style="width: 40px; display: block;">
-                          </a>
+                        <a href="https://instagram.com/sendkorrency" target="_blank">
+                          <img src="https://korrency-email-template.s3.amazonaws.com/instagram.png" alt="Instagram"
+                            style="width: 40px; display: block;">
+                        </a>
                         </td>
                         <td>
-                          <a href="https://twitter.com/">
+                          <a href="https://x.com/sendkorrency" target="_blank">
                             <img src="https://korrency-email-template.s3.amazonaws.com/twitter.png" alt="Twitter"
                               style="width: 40px; display: block;">
                           </a>
                         </td>
                         <td>
-                          <a href="https://linkedin.com/">
+                          <a href="https://www.linkedin.com/company/korrency" target="_blank">
                             <img src="https://korrency-email-template.s3.amazonaws.com/linkedin.png" alt="LinkedIn"
                               style="width: 40px; display: block;">
                           </a>
@@ -116,9 +116,12 @@
                 </tr>
               </table>
               <div style="padding: 25px 0; font-size: 14px; text-align: left;">
-                <a href="#" style="color: rgba(141, 145, 160, 1); text-decoration: none; margin-right: 10px;">Privacy
+                <a href="https://korrency.com/privacy-policy"
+                  style="color: rgba(141, 145, 160, 1); text-decoration: none; margin-right: 10px;"
+                  target="_blank">Privacy
                   Policy</a>
-                <a href="#" style="color: rgba(141, 145, 160, 1); text-decoration: none;">Terms and Conditions</a>
+                <a href="https://korrency.com/terms-and-condition"
+                  style="color: rgba(141, 145, 160, 1); text-decoration: none;" target="_blank">Terms and Conditions</a>
               </div>
             </td>
           </tr>
